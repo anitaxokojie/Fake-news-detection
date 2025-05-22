@@ -34,6 +34,7 @@ Fake news detection remains a significant challenge in today's information ecosy
 
 ## Installation
 
+# Quick Start
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/fake-news-detection.git
@@ -43,11 +44,6 @@ cd fake-news-detection
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
-
-## Quick Start
-```bash
 # Install dependencies
 pip install -r requirements.txt
 
