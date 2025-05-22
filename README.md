@@ -34,18 +34,15 @@ Fake news detection remains a significant challenge in today's information ecosy
 
 ## Installation
 
-# Quick Start
+## Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/fake-news-detection.git
-cd fake-news-detection
-
-# Create and activate a virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone https://github.com/anitaxokojie/fake-news-detection.git
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Download dataset (see data/README.md for instructions)
 
 # Run the analysis
 jupyter notebook fake_news_analysis.ipynb
