@@ -45,3 +45,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+## Quick Start
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the analysis
+jupyter notebook fake_news_analysis.ipynb
