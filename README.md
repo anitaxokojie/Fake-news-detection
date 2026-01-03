@@ -31,7 +31,7 @@ I tested four different approaches to find the right balance between accuracy an
 | **Hybrid Fusion** | 64.0% | 0.59 | Generalizes to new sources |
 | XGBoost | 100%* | 1.00 | *Severe data leakage |
 
-> **⚠️ Critical Finding: The "Reuters" Leak**  
+> ** Critical Finding: The "Reuters" Leak**  
 > XGBoost's 100% accuracy is actually a red flag. Feature importance analysis revealed it was simply memorizing source tags—"Reuters" appeared in most real news articles. This is a classic example of **data leakage**: the model learned a shortcut that works perfectly on this dataset but would fail immediately in production when encountering articles from new sources like "Associated Press" or "BBC."
 > 
 > **Why the Hybrid model wins:** Despite lower accuracy on this specific dataset, it learns actual stylistic patterns (sentence complexity, emotional language, lexical diversity) that generalize across unseen sources. In real-world deployment, you need robustness over training set performance.
@@ -107,12 +107,12 @@ Sophisticated misinformation often mimics credible writing perfectly at the sema
 
 ## Project Structure
 ```
-├── Hybrid_NLP_News_Verification_Pipeline.ipynb # Training, R&D, and Data Analysis
-├── model.py # Modularized architecture & inference function
-├── requirements.txt # Project dependencies
+├── Hybrid_NLP_News_Verification_Pipeline.ipynb   # Training, R&D, and Data Analysis
+├── model.py                               # Modularized architecture & inference function
+├── requirements.txt                      # Project dependencies
 ├── data/
-│ └── fake_or_real_news.csv # Dataset
-├── images/ # README visualizations
+│ └── fake_or_real_news.csv                # Dataset
+├── images/                                 # README visualizations
 │ ├── training_curves.png
 │ ├── model_comparison.png
 │ ├── confusion_matrix.png
