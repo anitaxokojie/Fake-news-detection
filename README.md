@@ -38,9 +38,11 @@ I tested four different approaches to find the right balance between accuracy an
 
 ### Performance Visualizations
 ![Training Curves](images/training_curves.png)
+
 *Training convergence showing the hybrid model's learning dynamics*
 
 ![Model Comparison](images/model_comparison.png)
+
 *Side-by-side performance across different architectures*
 
 ## How It Works
