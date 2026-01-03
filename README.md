@@ -6,7 +6,7 @@
 **Quick Links:** [Results](#results) | [How It Works](#how-it-works) | [Getting Started](#getting-started)
 
 **Tech Stack:** PyTorch, HuggingFace Transformers, XGBoost, LIME  
-**Dataset:** Kaggle Fake or Real News (~6,300 articles)
+**Dataset:** Kaggle Fake or Real News ~45,000 articles (sampled 6,300 for R&D).
 
 ---
 
@@ -107,18 +107,18 @@ Sophisticated misinformation often mimics credible writing perfectly at the sema
 
 ## Project Structure
 ```
-├── Hybrid_NLP_News_Verification_Pipeline.ipynb  # Main pipeline
-├── requirements.txt
+├── Hybrid_NLP_News_Verification_Pipeline.ipynb # Training, R&D, and Data Analysis
+├── model.py # Modularized architecture & inference function
+├── requirements.txt # Project dependencies
 ├── data/
-│   └── fake_or_real_news.csv
-├── images/
-│   ├── training_curves.png
-│   ├── model_comparison.png
-│   ├── confusion_matrix.png
-│   └── feature_importance.png
+│ └── fake_or_real_news.csv # Dataset
+├── images/ # README visualizations
+│ ├── training_curves.png
+│ ├── model_comparison.png
+│ ├── confusion_matrix.png
+│ └── feature_importance.png
 └── README.md
 ```
-
 ## Getting Started
 
 ### Prerequisites
